@@ -1,55 +1,65 @@
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+1
+用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.0+0538acc04
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+生成启动时间为 2021/10/27 0:45:32。
+节点 1 上的项目“C:\Users\cds\Desktop\Learn\e_github\cds_nanopb\build\CMakeFiles\3.18.0-rc2\CompilerIdCXX\CompilerIdCXX.vcxproj”(默认目标)。
+PrepareForBuild:
+  正在创建目录“Debug\”。
+  正在创建目录“Debug\CompilerIdCXX.tlog\”。
+InitializeBuildStatus:
+  正在创建“Debug\CompilerIdCXX.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+VcpkgTripletSelection:
+  Using triplet "x86-windows" from "C:\Users\cds\Downloads\Programs\vcpkg\installed\\x86-windows\"
+ClCompile:
+  C:\Program Files\SoftwareDevelopment\Visal Studio\IDE\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe /c /I"C:\Users\cds\Downloads\Programs\vcpkg\installed\\x86-windows\include" /nologo /W0 /WX- /diagnostics:column /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W0 /Gd /TP /analyze- /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files\SoftwareDevelopment\Visal Studio\IDE\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Users\cds\Downloads\Programs\vcpkg\installed\\x86-windows\debug\lib" /LIBPATH:"C:\Users\cds\Downloads\Programs\vcpkg\installed\\x86-windows\debug\lib\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\Users\cds\Downloads\Programs\vcpkg\installed\\x86-windows\debug\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+LINK : fatal error LNK1181: 无法打开输入文件“Debug\CMakeCXXCompilerId.obj” [C:\Users\cds\Desktop\Learn\e_github\cds_nanopb\build\CMakeFiles\3.18.0-rc2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+已完成生成项目“C:\Users\cds\Desktop\Learn\e_github\cds_nanopb\build\CMakeFiles\3.18.0-rc2\CompilerIdCXX\CompilerIdCXX.vcxproj”(默认目标)的操作 - 失败。
+
+生成失败。
+
+“C:\Users\cds\Desktop\Learn\e_github\cds_nanopb\build\CMakeFiles\3.18.0-rc2\CompilerIdCXX\CompilerIdCXX.vcxproj”(默认目标) (1) ->
+(Link 目标) -> 
+  LINK : fatal error LNK1181: 无法打开输入文件“Debug\CMakeCXXCompilerId.obj” [C:\Users\cds\Desktop\Learn\e_github\cds_nanopb\build\CMakeFiles\3.18.0-rc2\CompilerIdCXX\CompilerIdCXX.vcxproj]
+
+    0 个警告
+    1 个错误
+
+已用时间 00:00:03.31
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" did not produce an executable in "C:/Users/cds/Desktop/Learn/e_github/cds_nanopb/build/CMakeFiles/3.18.0-rc2/CompilerIdCXX".
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.29.30133 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+用法: cl [ 选项... ] 文件名... [ /link 链接选项... ]
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.29.30133 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+用法: cl [ 选项... ] 文件名... [ /link 链接选项... ]
 Detecting C compiler ABI info failed to compile with the following output:
 Change Dir: C:/Users/cds/Desktop/Learn/e_github/cds_nanopb/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_c998d/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_c998d.dir\build.make CMakeFiles/cmTC_c998d.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/cds/Desktop/Learn/e_github/cds_nanopb/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c998d.dir/CMakeCCompilerABI.c.obj
-C:\MinGW\bin\mingw32-gcc.exe   -v -o CMakeFiles\cmTC_c998d.dir\CMakeCCompilerABI.c.obj -c C:\UnZipProgram\Cmake3.18.0\cmake-3.18.0-rc2-win64-x64\share\cmake-3.18\Modules\CMakeCCompilerABI.c
-Using built-in specs.
-COLLECT_GCC=C:\MinGW\bin\mingw32-gcc.exe
-Target: mingw32
-Configured with: ../src/gcc-9.2.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-static --enable-shared --enable-threads --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --enable-libgomp --disable-libvtv --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --disable-build-format-warnings --prefix=/mingw --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --with-isl=/mingw --enable-nls --with-pkgversion='MinGW.org GCC Build-20200227-1'
-Thread model: win32
-gcc version 9.2.0 (MinGW.org GCC Build-20200227-1) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_c998d.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
- c:/mingw/bin/../libexec/gcc/mingw32/9.2.0/cc1.exe -quiet -v -iprefix c:\mingw\bin\../lib/gcc/mingw32/9.2.0/ C:\UnZipProgram\Cmake3.18.0\cmake-3.18.0-rc2-win64-x64\share\cmake-3.18\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_c998d.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\cds\AppData\Local\Temp\ccYPlUYw.s
-GNU C17 (MinGW.org GCC Build-20200227-1) version 9.2.0 (mingw32)
-	compiled by GNU C version 9.2.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.21-GMP
+Run Build Command(s):C:/Program Files/SoftwareDevelopment/Visal Studio/IDE/MSBuild/Current/Bin/MSBuild.exe cmTC_69363.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.0+0538acc04
+版权所有(C) Microsoft Corporation。保留所有权利。
 
-GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring nonexistent directory "c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../mingw32/include"
-ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/9.2.0/include"
-ignoring duplicate directory "/mingw/lib/gcc/mingw32/9.2.0/../../../../include"
-ignoring duplicate directory "c:/mingw/lib/gcc/../../include"
-ignoring duplicate directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/9.2.0/include-fixed"
-ignoring nonexistent directory "c:/mingw/lib/gcc/../../lib/gcc/mingw32/9.2.0/../../../../mingw32/include"
-ignoring duplicate directory "/mingw/include"
-#include "..." search starts here:
-#include <...> search starts here:
- c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include
- c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include
- c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed
-End of search list.
-GNU C17 (MinGW.org GCC Build-20200227-1) version 9.2.0 (mingw32)
-	compiled by GNU C version 9.2.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.21-GMP
-
-GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: 4466b5eb55ee496e209b8a8fdff6557f
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_c998d.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
- c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_c998d.dir\CMakeCCompilerABI.c.obj C:\Users\cds\AppData\Local\Temp\ccYPlUYw.s
-GNU assembler version 2.32 (mingw32) using BFD version (GNU Binutils) 2.32
-COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/9.2.0/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/
-LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/9.2.0/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_c998d.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
-Linking C executable cmTC_c998d.exe
-C:\UnZipProgram\Cmake3.18.0\cmake-3.18.0-rc2-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_c998d.dir\link.txt --verbose=1
-C:\UnZipProgram\Cmake3.18.0\cmake-3.18.0-rc2-win64-x64\bin\cmake.exe -E rm -f CMakeFiles\cmTC_c998d.dir/objects.a
-CMAKE_AR-NOTFOUND cr CMakeFiles\cmTC_c998d.dir/objects.a @CMakeFiles\cmTC_c998d.dir\objects1.rsp
-Error running link command: 绯荤粺鎵句笉鍒版寚瀹氱殑鏂囦欢銆?CMakeFiles\cmTC_c998d.dir\build.make:106: recipe for target 'cmTC_c998d.exe' failed
-mingw32-make.exe[1]: *** [cmTC_c998d.exe] Error 2
-mingw32-make.exe[1]: Leaving directory 'C:/Users/cds/Desktop/Learn/e_github/cds_nanopb/build/CMakeFiles/CMakeTmp'
-Makefile:140: recipe for target 'cmTC_c998d/fast' failed
-mingw32-make.exe: *** [cmTC_c998d/fast] Error 2
+  用于 x86 的 Microsoft (R) C/C++ 优化编译器 19.29.30133 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  CMakeCCompilerABI.c
+  cl /c /I"C:\Users\cds\Downloads\Programs\vcpkg\installed\\x86-windows\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_69363.dir\Debug\\" /Fd"cmTC_69363.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\UnZipProgram\Cmake3.18.0\cmake-3.18.0-rc2-win64-x64\share\cmake-3.18\Modules\CMakeCCompilerABI.c"
+cmTC_69363.dir\Debug\CMakeCCompilerABI.obj : fatal error LNK1112: 模块计算机类型“x86”与目标计算机类型“x64”冲突 [C:\Users\cds\Desktop\Learn\e_github\cds_nanopb\build\CMakeFiles\CMakeTmp\cmTC_69363.vcxproj]
 
 
 
@@ -57,19 +67,29 @@ mingw32-make.exe: *** [cmTC_c998d/fast] Error 2
 Determining if the C compiler works failed with the following output:
 Change Dir: C:/Users/cds/Desktop/Learn/e_github/cds_nanopb/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/MinGW/bin/mingw32-make.exe cmTC_b750b/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_b750b.dir\build.make CMakeFiles/cmTC_b750b.dir/build
-mingw32-make.exe[1]: Entering directory 'C:/Users/cds/Desktop/Learn/e_github/cds_nanopb/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b750b.dir/testCCompiler.c.obj
-C:\MinGW\bin\mingw32-gcc.exe    -o CMakeFiles\cmTC_b750b.dir\testCCompiler.c.obj -c C:\Users\cds\Desktop\Learn\e_github\cds_nanopb\build\CMakeFiles\CMakeTmp\testCCompiler.c
-Linking C executable cmTC_b750b.exe
-C:\UnZipProgram\Cmake3.18.0\cmake-3.18.0-rc2-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_b750b.dir\link.txt --verbose=1
-C:\UnZipProgram\Cmake3.18.0\cmake-3.18.0-rc2-win64-x64\bin\cmake.exe -E rm -f CMakeFiles\cmTC_b750b.dir/objects.a
-CMAKE_AR-NOTFOUND cr CMakeFiles\cmTC_b750b.dir/objects.a @CMakeFiles\cmTC_b750b.dir\objects1.rsp
-Error running link command: 绯荤粺鎵句笉鍒版寚瀹氱殑鏂囦欢銆?CMakeFiles\cmTC_b750b.dir\build.make:107: recipe for target 'cmTC_b750b.exe' failed
-mingw32-make.exe[1]: *** [cmTC_b750b.exe] Error 2
-mingw32-make.exe[1]: Leaving directory 'C:/Users/cds/Desktop/Learn/e_github/cds_nanopb/build/CMakeFiles/CMakeTmp'
-Makefile:140: recipe for target 'cmTC_b750b/fast' failed
-mingw32-make.exe: *** [cmTC_b750b/fast] Error 2
+Run Build Command(s):C:/Program Files/SoftwareDevelopment/Visal Studio/IDE/MSBuild/Current/Bin/MSBuild.exe cmTC_71c50.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.0+0538acc04
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+C:\Program Files\SoftwareDevelopment\Visal Studio\IDE\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(192,5): error MSB4018: “GetOutOfDateItems”任务意外失败。 [C:\Users\cds\Desktop\Learn\e_github\cds_nanopb\build\CMakeFiles\CMakeTmp\cmTC_71c50.vcxproj]
+C:\Program Files\SoftwareDevelopment\Visal Studio\IDE\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(192,5): error MSB4018: System.IO.DirectoryNotFoundException: 未能找到路径“C:\Users\cds\Desktop\Learn\e_github\cds_nanopb\build\CMakeFiles\CMakeTmp\cmTC_71c50.dir\Debug\cmTC_71c50.tlog\ParallelCustomBuild.read.1.tlog”的一部分。 [C:\Users\cds\Desktop\Learn\e_github\cds_nanopb\build\CMakeFiles\CMakeTmp\cmTC_71c50.vcxproj]
+C:\Program Files\SoftwareDevelopment\Visal Studio\IDE\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(192,5): error MSB4018:    在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) [C:\Users\cds\Desktop\Learn\e_github\cds_nanopb\build\CMakeFiles\CMakeTmp\cmTC_71c50.vcxproj]
+C:\Program Files\SoftwareDevelopment\Visal Studio\IDE\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(192,5): error MSB4018:    在 System.IO.File.InternalDelete(String path, Boolean checkHost) [C:\Users\cds\Desktop\Learn\e_github\cds_nanopb\build\CMakeFiles\CMakeTmp\cmTC_71c50.vcxproj]
+C:\Program Files\SoftwareDevelopment\Visal Studio\IDE\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(192,5): error MSB4018:    在 System.IO.File.Delete(String path) [C:\Users\cds\Desktop\Learn\e_github\cds_nanopb\build\CMakeFiles\CMakeTmp\cmTC_71c50.vcxproj]
+C:\Program Files\SoftwareDevelopment\Visal Studio\IDE\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(192,5): error MSB4018:    在 Microsoft.Build.CPPTasks.GetOutOfDateItems.Execute() [C:\Users\cds\Desktop\Learn\e_github\cds_nanopb\build\CMakeFiles\CMakeTmp\cmTC_71c50.vcxproj]
+C:\Program Files\SoftwareDevelopment\Visal Studio\IDE\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(192,5): error MSB4018:    在 Microsoft.Build.BackEnd.TaskExecutionHost.Microsoft.Build.BackEnd.ITaskExecutionHost.Execute() [C:\Users\cds\Desktop\Learn\e_github\cds_nanopb\build\CMakeFiles\CMakeTmp\cmTC_71c50.vcxproj]
+C:\Program Files\SoftwareDevelopment\Visal Studio\IDE\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(192,5): error MSB4018:    在 Microsoft.Build.BackEnd.TaskBuilder.<ExecuteInstantiatedTask>d__26.MoveNext() [C:\Users\cds\Desktop\Learn\e_github\cds_nanopb\build\CMakeFiles\CMakeTmp\cmTC_71c50.vcxproj]
+
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/cds/Desktop/Learn/e_github/cds_nanopb/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/SoftwareDevelopment/Visal Studio/IDE/MSBuild/Current/Bin/MSBuild.exe cmTC_b8ef5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.11.0+0538acc04
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+MSBUILD : error MSB1009: 项目文件不存在。
+开关:cmTC_b8ef5.vcxproj
+
 
 
 

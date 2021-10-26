@@ -4,8 +4,25 @@ project(cds_nanopb VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
+option(USING_NANOPB "使用nanopb库" ON)
 
-add_executable(cds_nanopb main.cpp)
+if(USING_NANOPB)
+    set(NANOPB_SRC 
+        ./nanopb/pb_common.c
+        ./nanopb/pb_encode.c
+        ./nanopb/pb_decode.c)
+
+    set(NANOPB_INCLUDE
+        ./nanopb/pb.h
+        ./nanopb/pb_common.h
+        ./nanopb/pb_encode.h
+        ./nanopb/pb_decode.h)
+    
+endif()
+    
+add_executable(cds_nanopb main.cpp NANOPB_SRC)
+target_include_directories(./nanopb/)
+
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
