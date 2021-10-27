@@ -10,12 +10,14 @@ if(USING_NANOPB)
     set(NANOPB_SRC 
         ./nanopb/pb_common.c
         ./nanopb/pb_encode.c
+        ./nanopb/cds_nanopb_info.pb.c
         ./nanopb/pb_decode.c)
 
     set(NANOPB_INCLUDE
         ./nanopb/pb.h
         ./nanopb/pb_common.h
         ./nanopb/pb_encode.h
+        ./nanopb/cds_nanopb_info.pb.h
         ./nanopb/pb_decode.h)
     
     include_directories("./nanopb/")
