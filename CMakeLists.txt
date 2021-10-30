@@ -5,7 +5,6 @@ include(CTest)
 enable_testing()
 
 option(USING_NANOPB "使用nanopb库" ON)
-
 if(USING_NANOPB)
     set(NANOPB_SRC 
         ./nanopb/pb_common.c
