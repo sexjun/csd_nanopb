@@ -6,6 +6,9 @@
 
 1. 通过源码配置后 [GitHub下载链接](https://github.com/sexjun/nanopb) 需要下载下面这些库文件。
 
+> 1. 创建文件：`requirement.txt`
+> 2. 将下方代码写入上述文件
+> 3. 执行：`pip install -r requirements.txt`
 ```python
 pip uninstall protobuf
 pip uninstall google
