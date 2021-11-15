@@ -20,9 +20,11 @@ if(USING_NANOPB)
         ./nanopb/pb_decode.h)
     
     include_directories("./nanopb/")
+    include_directories("./include")
+    aux_source_directory("./src" CDS_SRC)
 endif()
-    
-add_executable(cds_nanopb main.cpp ${NANOPB_SRC})
+
+add_executable(cds_nanopb main.cpp ${NANOPB_SRC} ${CDS_SRC})
 
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
