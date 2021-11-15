@@ -126,3 +126,8 @@ struct _pb_ostream_t
 > **注意：**对于`bytes`数据类型，字段长度检查可能不准确。编译器可能会向`pb_bytes_t`结构中添加一些填充，而 nanopb 运行时不知道填充了多少结构大小。因此它使用整个结构的长度来存储数据，这不是很聪明，但应该不会引起问题。实际上，这意味着如果您`(nanopb).max_size=5`在一个`bytes`字段上指定，您可能能够在那里存储 6 个字节。对于`string`字段类型，长度限制是准确的。
 
 > **注意：**解码器一次只跟踪一个`fixed_count`重复的字段。通常这不是问题，因为重复字段的所有元素都是端到端的。几个`fixed_count`重复字段的交错数组元素将是有效的 protobuf 消息，但会被 nanopb 解码器拒绝并显示错误`"wrong size for fixed count field"`。
+
+
+
+## 参考教程
+- [nanopb关于string类型的处理](https://www.cnblogs.com/smartlife/articles/12443908.html)
