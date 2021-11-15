@@ -17,7 +17,7 @@ if int(run_code) == 0:
 elif int(run_code) == 1:
     sub_code = "git submodule init && git submodule update"
 elif int(run_code) == 2:
-    sub_code = "git add . && git commit -m \"all\""
+    sub_code = "git add . && git commit -m \"all\" && git push"
 elif int(run_code) == 3:
     sub_code = "cd  nanopb && python cds_compile_and_move_file.py"
 else:
