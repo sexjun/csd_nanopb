@@ -12,7 +12,9 @@ usage = """
 print(usage)
 run_code = input("请输入指令：")
 
-if int(run_code) == 1:
+if int(run_code) == 0:
+    exit(1)
+elif int(run_code) == 1:
     sub_code = "git submodule init && git submodule update"
 elif int(run_code) == 2:
     sub_code = "git add . && git commit -m \"all\""
