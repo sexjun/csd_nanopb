@@ -3,7 +3,7 @@ project(cds_nanopb VERSION 0.1.0)
 
 include(CTest)
 enable_testing()
-
+set(CMAKE_CXX_STANDARD 20)
 option(USING_NANOPB "使用nanopb库" ON)
 if(USING_NANOPB)
     set(NANOPB_SRC 
@@ -23,7 +23,6 @@ if(USING_NANOPB)
     include_directories("./include")
     aux_source_directory("./src" CDS_SRC)
 endif()
-
 add_executable(cds_nanopb main.cpp ${NANOPB_SRC} ${CDS_SRC})
 
 

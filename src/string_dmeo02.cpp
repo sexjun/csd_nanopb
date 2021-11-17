@@ -1,5 +1,8 @@
 #include "cds_nanopb.h" // 测试方法的头文件
 #include <iostream>
+#include <string>
+
+using namespace std;
 
 #define FAILED -1
 #define SUCCESS 1
@@ -7,10 +10,12 @@
 bool encodingString(pb_ostream_t *stream, const pb_field_t *field, void * const *arg)
 {
     char* name = (char*)*arg;
+    // 对字段的线类型和标签编号进行编码
     if (!pb_encode_tag_for_field(stream, field))
     {
         return false;
     }
+    // 对该字段的内容进行编码
     return pb_encode_string(stream, (uint8_t*)name, strlen(name));
 }
 
@@ -28,6 +33,23 @@ bool decodingString(pb_istream_t *stream, const pb_field_t *field, void **arg)
         i++;
     }
     return true;
+}
+
+typedef struct {
+    string name;
+    int age;
+    string sex;
+}persion_p;
+void test(){
+    persion_p p ={"cds", 12, "xxxx"};
+    cout << p.name << endl;
+    cout << p.age << endl;
+    cout << p.sex << endl;
+
+    // persion_p p2 = {.age = 12, .sex ="sex", .name = "name"};
+    // cout << p2.name << endl;
+    // cout << p2.age << endl;
+    // cout << p2.sex << endl;
 }
 
 int tryStringDataDemo()
@@ -55,5 +77,7 @@ int tryStringDataDemo()
         std::cout << "age is : " << p2.age << std::endl;
     }
 
+    test();
     return SUCCESS;
 }
+

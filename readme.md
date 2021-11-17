@@ -158,3 +158,73 @@ struct pb_istream_s
 
 ## 参考教程
 - [nanopb关于string类型的处理](https://www.cnblogs.com/smartlife/articles/12443908.html)
+
+
+
+
+
+## 编码教程
+
+> 以下内容转载自：[StackOverflow](https://stackoverflow.com/questions/57569586/how-to-encode-a-string-when-it-is-a-pb-callback-t-type)
+
+The `pb_callback_t` struct contains a `void* arg` field which you can use to pass any custom data to the encode/decode function through the `arg` parameter.
+
+In this case you could do:
+
+```csharp
+int main()
+{
+    ... 
+    featurefile.features.Id.arg = "something";
+    featurefile.features.Id.funcs.encode = &encode_string;
+}
+```
+
+And note that the `arg` parameter is a *pointer* to `void * const`, so you will always have to dereference it:
+
+```cpp
+bool encode_string(pb_ostream_t* stream, const pb_field_t* field, void* const* arg)
+{
+    const char* str = (const char*)(*arg);
+
+    if (!pb_encode_tag_for_field(stream, field))
+        return false;
+
+    return pb_encode_string(stream, (uint8_t*)str, strlen(str));
+}
+```
+
+Note that you can pass a pointer to any struct, i.e. you can easily create a sort of a "parsing context" struct and pass it around so that you don't need to care how the parsing func will use it.
+
+In this case, it could be something like:
+
+```cpp
+typedef struct
+{
+    const char * something;
+    const char * whatever;
+    ...
+}
+callback_context_t;
+
+int main()
+{
+    callback_context_t ctx = { .something = "something" };
+
+    // this way you always pass the same pointer type
+    featurefile.features.Id.arg = &ctx;
+    featurefile.features.Id.funcs.encode = &encode_string;
+}
+
+bool encode_string(pb_ostream_t* stream, const pb_field_t* field, void* const* arg)
+{
+    // ...and you always cast to the same pointer type, reducing
+    // the chance of mistakes
+    callback_context_t * ctx = (callback_context_t *)(*arg);
+
+    if (!pb_encode_tag_for_field(stream, field))
+        return false;
+
+    return pb_encode_string(stream, (uint8_t*)ctx->something, strlen(ctx->something));
+}
+```
