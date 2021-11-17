@@ -76,15 +76,39 @@ Nanopb 使用流来访问编码格式的数据。流抽象非常轻量级，由�
 
 6. 您不需要提前知道消息的长度。读取时出现EOF错误后，设置`bytes_left`为0并返回`false`。`pb_decode()`将检测到这一点，如果 EOF 处于正确位置，它将返回 true。
 
+- 输出流
 ```c
 struct _pb_ostream_t
 {
+    // 编码的回调函数
    bool (*callback)(pb_ostream_t *stream, const uint8_t *buf, size_t count);
    void *state;
+   // 编码的最大长度
    size_t max_size;
+   // 已经编码了多大
    size_t bytes_written;
 };
 ```
+
+- 输入流
+```c
+struct pb_istream_s
+{
+    // 解码的回调函数
+    bool (*callback)(pb_istream_t *stream, pb_byte_t *buf, size_t count);
+    void *state; 
+    // 是否解码了所欲字符
+    size_t bytes_left;  
+#ifndef PB_NO_ERRMSG
+    const char *errmsg;
+#endif
+};
+
+```
+
+
+- 输入流
+
 
 ### 3.2 **数据类型：**
 

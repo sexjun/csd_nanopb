@@ -8,6 +8,7 @@
 int main()
 {
     simple_demo01();
+    tryStringDataDemo();
     return 0;
 }
 

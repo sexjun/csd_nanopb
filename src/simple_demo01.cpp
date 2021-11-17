@@ -67,22 +67,3 @@ int simple_demo01()
     }
     return 1;
 }
-
-bool callback(pb_ostream_t stream, const uint8_t buf, size_t count)
-{
-    FILE *file = (FILE*) stream->state;
-    return fwrite(buf, 1, count, file) == count;
-}
-
-int tryStringDataDemo()
-{
-    Persion p = Persion_init_default;
-    pb_ostream_t sizestream = {0};
-    p.name.funcs.encode = callback;
-    p.age = 100;
-    pb_encode(&sizestream, Persion_fields, &p);
-    printf("Encoded size is %d\n", sizestream.bytes_written);
-
-    pb_ostream_t stdoutstream = {&callback, stdout, SIZE_MAX, 0};
-    return SUCCESS;
-}
